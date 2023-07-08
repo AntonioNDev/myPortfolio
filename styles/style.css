@@ -19,6 +19,11 @@
    --gray-blue: #E0E7E9;
 }
 
+a {
+   text-decoration: none;
+   color: #354649;
+}
+
 html, body {
    scroll-behavior: smooth;
    scrollbar-width: 0px;
@@ -77,14 +82,42 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    flex-direction: column;
  }
 
-.wrapper .main #title {
-   text-align: center;
+.wrapper .main #top-nav {
    padding: 0.5%;
    display: flex;
-   justify-content: center;
    position: sticky;
    font-family: var(--nav-);
-   top: 0;
+   letter-spacing: 0.1cm;
+   align-items: center;
+   height: 1%;
+   opacity: 1;
+   top: 30px;
+   margin-top: 2.1%;
+   transition: all 150ms 0.5s ease;
+}
+
+.wrapper .main #top-nav ul {
+   display: flex;
+   list-style: none;
+   position: sticky;
+   top: 50px;
+}
+
+.wrapper .main #top-nav ul li {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1.5%;
+   width: 145px;
+   top: -100px;
+   text-align: center;
+}
+
+#title {
+   opacity: 0.5;
+   margin-left: auto;
+   margin-right: 45%;
 }
 
 .wrapper .main #hero {
@@ -111,7 +144,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 
 .wrapper .main #hero p {
    font-size: 1.5em;
-   margin-bottom: 10%;
+   margin-bottom: 15%;
    font-family: var(--paragraph-);
 }
 
@@ -126,7 +159,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 .wrapper .main #hero svg path {
    fill-opacity: 0.5;
    animation: waveAnimation 4s cubic-bezier(0.7, 0.67, 0.3, 0.52) infinite;
-   filter: drop-shadow(20px -70px 20px #A3C6C4);
+   filter: drop-shadow(20px -50px 20px #A3C6C4);
  }
 
  .wrapper .main #hero svg .gradient {
@@ -154,7 +187,117 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    opacity: 1;
 }
 
- @keyframes waveAnimation {
+#email:hover::before {
+   content: '\f2b6';
+}
+
+#bars:hover::before {
+   content: "\f550";
+ }
+
+
+#contact {
+   text-align: center;
+   position: absolute;
+   bottom: 100px;
+   left: 100px;
+   border: 3px solid #6C7A89;
+   width: 300px;
+   height: 560px;
+   display: none;
+   opacity: 1;
+   flex-direction: column;
+   background: transparent;
+   backdrop-filter: blur(15px);
+   border-radius: 10px;
+}
+
+#contact form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#contactTitle {
+   margin-bottom: 8%;
+   margin-top: 5%;
+   font-family: var(--nav-);
+}
+
+#contact form label {
+   font-family: var(--paragraph-);
+   font-weight: bold;
+}
+
+#contact form input {
+   width: 90%;
+   font-family: sans-serifa;
+   height: 30px;
+   border-radius: 10px;
+   border: 0.5px solid #6C7A89;
+   padding-left: 10px;
+   cursor: pointer;
+   font-size: 1em;
+   margin-bottom: 5%;
+   margin-top: 3%;
+}
+
+#contact form textarea {
+   resize: none;
+   padding: 5% 5% 5% 5%;
+}
+
+#contact form button {
+   position: relative;
+   margin-top: 5%;
+   width: 130px;
+   height: 30px;
+   border-radius: 10px;
+   font-family: sans-serif;
+   font-size: 1.2em;
+   border: 1px solid #354649;
+   color: #354649;
+   cursor: pointer;
+   background: #A3C6C4;
+}
+
+#contact form button:hover {
+   color: teal;
+   top: 5px;
+   background: #E0E7E9;
+}
+
+
+/* Animations */
+@keyframes listUp {
+   0% {
+      top: 0px;
+   } 
+   50% {
+      top: -50px;
+   }
+
+   100% {
+      top: -100px;
+   }
+}
+
+@keyframes listDown {
+   0% {
+      top: -100px;
+   } 
+
+   50% {
+      top: -50px;
+   }
+
+   100% {
+      top: 0px;
+   }
+}
+
+@keyframes waveAnimation {
    0% {
      d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
    }

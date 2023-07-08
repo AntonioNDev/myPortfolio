@@ -12,14 +12,33 @@
    <body>
       <section class="wrapper">
          <nav id="side-menu">
-           <i class="fa-solid fa-bars"></i>
-           <p id="current">Home</p>
-           <i class="fa-regular fa-envelope"></i>
+            <i id="bars" class="fa-solid fa-bars"></i>
+            <p id="current">Home</p>
+            <i id="email" class="fa-regular fa-envelope"></i>
+            <div id="contact">
+               <h3 id="contactTitle">Request a project</h3>
+               <form action="">
+                  <label for="firstName">First Name</label>
+                  <input type="text" name="firstName" id="name">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" name="lastName" id="name">
+                  <label for="email">email</label>
+                  <input type="email" name="email" id="name">
+                  <label for="content">Write more about the project</label>
+                  <textarea name="content" id="text" cols="30" rows="10"></textarea>
+                  <button type="submit">Send</button>
+               </form>
+            </div>
          </nav>
          <div class="content">
-           <section class="main">
-             <div id="title">
-               <h3>AntonioNDev</h3>
+           <section class="main" id="home">
+             <div id="top-nav">
+               <ul>
+                  <li><a href="#home">HOME</a></li>
+                  <li><a href="#about">ABOUT ME</a></li>
+                  <li><a href="#projects">PROJECTS</a></li>
+               </ul>
+               <h3 id="title">AntonioNDev</h3>
              </div>
              <div id="hero">
                <h2 id="intro">Hello, <br> my name is Antonio</h2>

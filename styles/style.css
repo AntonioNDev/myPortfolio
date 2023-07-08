@@ -19,15 +19,19 @@
    --gray-blue: #E0E7E9;
 }
 
+html, body {
+   scroll-behavior: smooth;
+   scrollbar-width: 0px;
+   scrollbar-color: transparent;
+   background: linear-gradient(var(--gray-blue) 20%, var(--water-blue-) 35%, var(--lighter-dark-blue) 50%, var(--dark-aqua-blue) 80%);
+}
+
+html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
+
 * {
    padding: 0px;
    margin: 0px;
-   scroll-behavior: smooth;
    /* border: 0.5px solid crimson; */
-}
-
-body {
-   background: linear-gradient(var(--gray-blue) 15%, var(--water-blue-) 30%, var(--lighter-dark-blue) 50%, var(--dark-aqua-blue) 80%);
 }
 
 .wrapper {
@@ -66,6 +70,12 @@ body {
    width: 100%;
    height: 300vh;
 }
+
+.wrapper .content {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+ }
 
 .wrapper .main #title {
    text-align: center;
@@ -114,13 +124,35 @@ body {
 }
 
 .wrapper .main #hero svg path {
-   fill-opacity: 0.7;
+   fill-opacity: 0.5;
    animation: waveAnimation 4s cubic-bezier(0.7, 0.67, 0.3, 0.52) infinite;
+   filter: drop-shadow(20px -70px 20px #A3C6C4);
  }
 
  .wrapper .main #hero svg .gradient {
    fill: url(#waveGradient);
  } 
+
+#hi {
+   position: absolute;
+   left: 50%;
+   z-index: 1;
+   font-size: 1.3em;
+   cursor: pointer;
+   bottom: 5%;
+   opacity: 0.5;
+   background: #6C7A89;
+   padding: 1%;
+   color: #E0E7E9;
+   border-radius: 50%;
+   transition: all 300ms 0s ease;
+}
+
+.wrapper .content .main #hero i:hover {
+   background: #354649;
+   color: aquamarine;
+   opacity: 1;
+}
 
  @keyframes waveAnimation {
    0% {

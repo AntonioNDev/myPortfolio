@@ -12,34 +12,35 @@
    <body>
       <section class="wrapper">
          <nav id="side-menu">
-            <i id="bars" class="fa-solid fa-bars"></i>
-            <p id="current">Home</p>
-            <i id="email" class="fa-regular fa-envelope"></i>
+            <i id="bars" class="fa-solid fa-bars light"></i>
+            <p id="current" class="light">Home</p>
+            <i id="email" class="fa-regular fa-envelope light"></i>
             <div id="contact">
-               <h3 id="contactTitle">Request a project</h3>
+               <h3 id="contactTitle" class="light">Request a project</h3>
                <form action="">
-                  <label for="firstName">First Name</label>
-                  <input type="text" name="firstName" id="name">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" name="lastName" id="name">
-                  <label for="email">email</label>
-                  <input type="email" name="email" id="name">
-                  <label for="content">Write more about the project</label>
+                  <label for="firstName" class="light">First Name</label>
+                  <input type="text" name="firstName" id="name" required maxlength="50" minlength="10">
+                  <label for="lastName" class="light">Last Name</label>
+                  <input type="text" name="lastName" id="name" required maxlength="50" minlength="10">
+                  <label for="email" class="light">email</label>
+                  <input type="email" name="email" id="name" required maxlength="60" minlength="40">
+                  <label for="content" class="light">Write more about the project</label>
                   <textarea name="content" id="text" cols="30" rows="10"></textarea>
                   <button type="submit">Send</button>
                </form>
             </div>
          </nav>
+         <!-- ############# -->
          <div class="content">
+           <div id="top-nav">
+             <ul>
+                <li><a href="#home" class="light">HOME</a></li>
+                <li><a href="#about" class="light">ABOUT ME</a></li>
+                <li><a href="#projects" class="light">PROJECTS</a></li>
+             </ul>
+             <h3 id="title">AntonioNDev</h3>
+           </div>
            <section class="main" id="home">
-             <div id="top-nav">
-               <ul>
-                  <li><a href="#home">HOME</a></li>
-                  <li><a href="#about">ABOUT ME</a></li>
-                  <li><a href="#projects">PROJECTS</a></li>
-               </ul>
-               <h3 id="title">AntonioNDev</h3>
-             </div>
              <div id="hero">
                <h2 id="intro">Hello, <br> my name is Antonio</h2>
                <p id="intro">Welcome to my portfolio website, where I showcase my passion for coding and technology.</p>
@@ -56,7 +57,10 @@
              </div>
            </section>
            <section class="about" id="about">
-             <h1>HELLO</h1>
+              <h1>HELLO</h1>
+           </section>
+           <section class="projects" id="projects">
+              <h1>ALI HOCE U MERCEDESA</h1>
            </section>
          </div>
        </section>       

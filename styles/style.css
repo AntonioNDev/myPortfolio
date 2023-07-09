@@ -21,14 +21,13 @@
 
 a {
    text-decoration: none;
-   color: #354649;
 }
 
 html, body {
    scroll-behavior: smooth;
    scrollbar-width: 0px;
    scrollbar-color: transparent;
-   background: linear-gradient(var(--gray-blue) 20%, var(--water-blue-) 35%, var(--lighter-dark-blue) 50%, var(--dark-aqua-blue) 80%);
+   background: linear-gradient(var(--gray-blue) 20%, var(--water-blue-) 35%, var(--lighter-dark-blue) 49%, var(--dark-aqua-blue) 80%);
 }
 
 html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
@@ -41,7 +40,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 
 .wrapper {
    display: flex;
-   height: auto;
+   height: 300vh;
    width: 100%;
 }
 
@@ -63,17 +62,19 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    font-size: 1.4em;
    cursor: pointer;
    z-index: 99;
+   -webkit-user-select: none;
 }
 
 .wrapper #side-menu #current {
    font-family: var(--nav-);
    transform: rotate(-90deg);
-   margin-right: 30%;
+   margin-right: 15%;
+   width: 120px;
 }
 
 .wrapper .main {
    width: 100%;
-   height: 300vh;
+   height: 100vh;
 }
 
 .wrapper .content {
@@ -82,7 +83,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    flex-direction: column;
  }
 
-.wrapper .main #top-nav {
+.wrapper .content #top-nav {
    padding: 0.5%;
    display: flex;
    position: sticky;
@@ -90,20 +91,19 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    letter-spacing: 0.1cm;
    align-items: center;
    height: 1%;
-   opacity: 1;
-   top: 30px;
-   margin-top: 2.1%;
-   transition: all 150ms 0.5s ease;
+   top: 33px;
+   margin-top: 2%;
+   z-index: 1;
 }
 
-.wrapper .main #top-nav ul {
+.wrapper .content #top-nav ul {
    display: flex;
    list-style: none;
    position: sticky;
    top: 50px;
 }
 
-.wrapper .main #top-nav ul li {
+.wrapper .content #top-nav ul li {
    position: relative;
    display: flex;
    justify-content: center;
@@ -114,10 +114,22 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    text-align: center;
 }
 
+.wrapper .content #top-nav ul li a {transition: all 100ms 0s linear; color: #354649;}
+
+.wrapper .content #top-nav ul li a:hover {
+   font-weight: 900;
+   border-bottom: 2px solid #354649;
+}
+
 #title {
-   opacity: 0.5;
+   opacity: 0;
    margin-left: auto;
    margin-right: 45%;
+   font-size: 1em;
+   z-index: 2;
+   color: #E0E7E9;
+   -webkit-user-select: none;
+   transition: all 300ms 30ms ease-in-out;
 }
 
 .wrapper .main #hero {
@@ -166,7 +178,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    fill: url(#waveGradient);
  } 
 
-#hi {
+#hi { /* arrow */
    position: absolute;
    left: 50%;
    z-index: 1;
@@ -266,6 +278,16 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    color: teal;
    top: 5px;
    background: #E0E7E9;
+}
+
+.about {
+   width: 100%;
+   height: 120vh;
+}
+
+.projects {
+   width: 100%;
+   height: 110vh;
 }
 
 

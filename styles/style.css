@@ -21,6 +21,7 @@
 
 a {
    text-decoration: none;
+   color: #E0E7E9;
 }
 
 html, body {
@@ -121,7 +122,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    border-bottom: 2px solid #354649;
 }
 
-#title {
+#title{
    opacity: 0;
    margin-left: auto;
    margin-right: 45%;
@@ -129,8 +130,9 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    z-index: 2;
    color: #E0E7E9;
    -webkit-user-select: none;
-   transition: all 300ms 30ms ease-in-out;
+   transition: all 300ms 1s ease-in-out;
 }
+
 
 .wrapper .main #hero {
    width: 100%;
@@ -138,6 +140,10 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    display: flex;
    flex-direction: column;
    justify-content: center;
+}
+
+.light {
+   transition: all 400ms 50ms linear;
 }
 
 .wrapper .main #hero #intro{
@@ -165,12 +171,11 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    bottom: 0;
    width: 100%;
    right: 0;
-   z-index: 0;
 }
 
 .wrapper .main #hero svg path {
    fill-opacity: 0.5;
-   animation: waveAnimation 4s cubic-bezier(0.7, 0.67, 0.3, 0.52) infinite;
+   animation: waveAnimation 4s cubic-bezier(0.7, 0.67, 0.3, 0.52) infinite running;
    filter: drop-shadow(20px -50px 20px #A3C6C4);
  }
 
@@ -292,6 +297,28 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 
 
 /* Animations */
+
+@keyframes scrollAnimation {
+   0% {
+     d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   20% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,80L1380,80C1320,80,1200,80,1080,80C960,80,840,80,720,80C600,80,480,80,360,80C240,80,120,80,60,80L0,80Z");
+   }
+   40% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,160L1380,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z");
+   }
+   60% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,240L1380,240C1320,240,1200,240,1080,240C960,240,840,240,720,240C600,240,480,240,360,240C240,240,120,240,60,240L0,240Z");
+   }
+   80% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   100% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z");
+   }
+ }
+
 @keyframes listUp {
    0% {
       top: 0px;

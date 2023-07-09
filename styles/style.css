@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+:root {
+   /*FONTS*/
+   --paragraph-: 'Ysabeau SC', sans-serif;
+   --hero-: 'Oswald', sans-serif;
+   --nav-: 'Montserrat', sans-serif;
+   --headers-: 'Squada One', cursive, sans-serif;
+
+   /*COLOR PALLETE*/
+   --dark-aqua-blue: #354649;
+   --lighter-dark-blue: #6C7A89;
+   --water-blue-: #A3C6C4;
+   --gray-blue: #E0E7E9;
+}
+
+a {
+   text-decoration: none;
+   color: #E0E7E9;
+}
+
+html, body {
+   scroll-behavior: smooth;
+   scrollbar-width: 0px;
+   scrollbar-color: transparent;
+   background: linear-gradient(var(--gray-blue) 20%, var(--water-blue-) 35%, var(--lighter-dark-blue) 49%, var(--dark-aqua-blue) 80%);
+}
+
+html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
+
+* {
+   padding: 0px;
+   margin: 0px;
+   /* border: 0.5px solid crimson; */
+}
+
+.wrapper {
+   display: flex;
+   height: 300vh;
+   width: 100%;
+}
+
+.wrapper #side-menu {
+   width: 5%;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
+
+.wrapper #side-menu i, #current {
+   margin: 50% 0 50% 0;
+   font-size: 1.4em;
+   cursor: pointer;
+   z-index: 99;
+   -webkit-user-select: none;
+}
+
+.wrapper #side-menu #current {
+   font-family: var(--nav-);
+   transform: rotate(-90deg);
+   margin-right: 15%;
+   width: 120px;
+}
+
+.wrapper .main {
+   width: 100%;
+   height: 100vh;
+}
+
+.wrapper .content {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+ }
+
+.wrapper .content #top-nav {
+   padding: 0.5%;
+   display: flex;
+   position: sticky;
+   font-family: var(--nav-);
+   letter-spacing: 0.1cm;
+   align-items: center;
+   height: 1%;
+   top: 33px;
+   margin-top: 2%;
+   z-index: 1;
+}
+
+.wrapper .content #top-nav ul {
+   display: flex;
+   list-style: none;
+   position: sticky;
+   top: 50px;
+}
+
+.wrapper .content #top-nav ul li {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1.5%;
+   width: 145px;
+   top: -100px;
+   text-align: center;
+}
+
+.wrapper .content #top-nav ul li a {transition: all 100ms 0s linear; color: #354649;}
+
+.wrapper .content #top-nav ul li a:hover {
+   font-weight: 900;
+   border-bottom: 2px solid #354649;
+}
+
+#title{
+   opacity: 0;
+   margin-left: auto;
+   margin-right: 45%;
+   font-size: 1em;
+   z-index: 2;
+   color: #E0E7E9;
+   -webkit-user-select: none;
+   transition: all 300ms 1s ease-in-out;
+}
+
+
+.wrapper .main #hero {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.light {
+   transition: all 400ms 50ms linear;
+}
+
+.wrapper .main #hero #intro{
+   width: fit-content;
+   flex-wrap: wrap;
+   margin-left: 15%;
+}
+
+.wrapper .main #hero h2 {
+   font-size: 3em;
+   margin-bottom: 2%;
+   font-weight: bold;
+   letter-spacing: 0.05cm;
+   font-family: var(--hero-);
+}
+
+.wrapper .main #hero p {
+   font-size: 1.5em;
+   margin-bottom: 15%;
+   font-family: var(--paragraph-);
+}
+
+.wrapper .main #hero svg {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   right: 0;
+}
+
+.wrapper .main #hero svg path {
+   fill-opacity: 0.5;
+   animation: waveAnimation 4s cubic-bezier(0.7, 0.67, 0.3, 0.52) infinite running;
+   filter: drop-shadow(20px -50px 20px #A3C6C4);
+ }
+
+ .wrapper .main #hero svg .gradient {
+   fill: url(#waveGradient);
+ } 
+
+#hi { /* arrow */
+   position: absolute;
+   left: 50%;
+   z-index: 1;
+   font-size: 1.3em;
+   cursor: pointer;
+   bottom: 5%;
+   opacity: 0.5;
+   background: #6C7A89;
+   padding: 1%;
+   color: #E0E7E9;
+   border-radius: 50%;
+   transition: all 300ms 0s ease;
+}
+
+.wrapper .content .main #hero i:hover {
+   background: #354649;
+   color: aquamarine;
+   opacity: 1;
+}
+
+#email:hover::before {
+   content: '\f2b6';
+}
+
+#bars:hover::before {
+   content: "\f550";
+ }
+
+
+#contact {
+   text-align: center;
+   position: absolute;
+   bottom: 100px;
+   left: 100px;
+   border: 3px solid #6C7A89;
+   width: 300px;
+   height: 560px;
+   display: none;
+   opacity: 1;
+   flex-direction: column;
+   background: transparent;
+   backdrop-filter: blur(15px);
+   border-radius: 10px;
+}
+
+#contact form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#contactTitle {
+   margin-bottom: 8%;
+   margin-top: 5%;
+   font-family: var(--nav-);
+}
+
+#contact form label {
+   font-family: var(--paragraph-);
+   font-weight: bold;
+}
+
+#contact form input {
+   width: 90%;
+   font-family: sans-serifa;
+   height: 30px;
+   border-radius: 10px;
+   border: 0.5px solid #6C7A89;
+   padding-left: 10px;
+   cursor: pointer;
+   font-size: 1em;
+   margin-bottom: 5%;
+   margin-top: 3%;
+}
+
+#contact form textarea {
+   resize: none;
+   padding: 5% 5% 5% 5%;
+}
+
+#contact form button {
+   position: relative;
+   margin-top: 5%;
+   width: 130px;
+   height: 30px;
+   border-radius: 10px;
+   font-family: sans-serif;
+   font-size: 1.2em;
+   border: 1px solid #354649;
+   color: #354649;
+   cursor: pointer;
+   background: #A3C6C4;
+}
+
+#contact form button:hover {
+   color: teal;
+   top: 5px;
+   background: #E0E7E9;
+}
+
+.about {
+   width: 100%;
+   height: 120vh;
+}
+
+.projects {
+   width: 100%;
+   height: 110vh;
+}
+
+
+/* Animations */
+
+@keyframes scrollAnimation {
+   0% {
+     d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   20% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,80L1380,80C1320,80,1200,80,1080,80C960,80,840,80,720,80C600,80,480,80,360,80C240,80,120,80,60,80L0,80Z");
+   }
+   40% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,160L1380,160C1320,160,1200,160,1080,160C960,160,840,160,720,160C600,160,480,160,360,160C240,160,120,160,60,160L0,160Z");
+   }
+   60% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,240L1380,240C1320,240,1200,240,1080,240C960,240,840,240,720,240C600,240,480,240,360,240C240,240,120,240,60,240L0,240Z");
+   }
+   80% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   100% {
+     d: path("M0,0L60,0C120,0,240,0,360,0C480,0,600,0,720,0C840,0,960,0,1080,0C1200,0,1320,0,1380,0L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z");
+   }
+ }
+
+@keyframes listUp {
+   0% {
+      top: 0px;
+   } 
+   50% {
+      top: -50px;
+   }
+
+   100% {
+      top: -100px;
+   }
+}
+
+@keyframes listDown {
+   0% {
+      top: -100px;
+   } 
+
+   50% {
+      top: -50px;
+   }
+
+   100% {
+      top: 0px;
+   }
+}
+
+@keyframes waveAnimation {
+   0% {
+     d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   50% {
+     d: path("M0,176L60,152.7C120,129,240,83,360,88C480,93,600,147,720,161.3C840,176,960,150,1080,128C1200,107,1320,91,1380,83.7L1440,77L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+   100% {
+     d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
+   }
+ }

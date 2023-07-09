@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../styles/style.css">
+      <script src="https://kit.fontawesome.com/e8303bef12.js" crossorigin="anonymous"></script>
+      <script src="../scripts/script.js"></script>
+      <title>AntonioNDev</title>
+   </head>
+   <body>
+      <section class="wrapper">
+         <nav id="side-menu">
+            <i id="bars" class="fa-solid fa-bars light"></i>
+            <p id="current" class="light">Home</p>
+            <i id="email" class="fa-regular fa-envelope light"></i>
+            <div id="contact">
+               <h3 id="contactTitle" class="light">Request a project</h3>
+               <form action="">
+                  <label for="firstName" class="light">First Name</label>
+                  <input type="text" name="firstName" id="name" required maxlength="50" minlength="10">
+                  <label for="lastName" class="light">Last Name</label>
+                  <input type="text" name="lastName" id="name" required maxlength="50" minlength="10">
+                  <label for="email" class="light">email</label>
+                  <input type="email" name="email" id="name" required maxlength="60" minlength="40">
+                  <label for="content" class="light">Write more about the project</label>
+                  <textarea name="content" id="text" cols="30" rows="10"></textarea>
+                  <button type="submit">Send</button>
+               </form>
+            </div>
+         </nav>
+         <!-- ############# -->
+         <div class="content">
+           <div id="top-nav">
+             <ul>
+                <li><a href="#home" class="light">HOME</a></li>
+                <li><a href="#about" class="light">ABOUT ME</a></li>
+                <li><a href="#projects" class="light">PROJECTS</a></li>
+             </ul>
+             <h3 id="title"><a href="#home">AntonioNDev</a></h3>
+           </div>
+           <section class="main" id="home">
+             <div id="hero">
+               <h2 id="intro">Hello, <br> my name is Antonio</h2>
+               <p id="intro">Welcome to my portfolio website, where I showcase my passion for coding and technology.</p>
+               <a href="#about"><i id="hi" class="fa-solid fa-arrow-down fa-bounce"></i></a>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="waveGradient" gradientTransform="rotate(90)">
+                      <stop offset="80%" stop-color="#E0E7E9" />
+                      <stop offset="100%" stop-color="#A3C6C4" />
+                    </linearGradient>
+                  </defs>
+                  <path class="gradient" fill="url(#waveGradient)" d="M0,0L1440,0L1440,320L0,320Z M0,320L60,320C120,320,240,320,360,320C480,320,600,320,720,320C840,320,960,320,1080,320C1200,320,1320,320,1380,320L1440,320" />
+               </svg>                
+             </div>
+           </section>
+           <section class="about" id="about">
+              <h1>HELLO</h1>
+           </section>
+           <section class="projects" id="projects">
+              <h1>ALI HOCE U MERCEDESA</h1>
+           </section>
+         </div>
+       </section>       
+   </body>
+</html>

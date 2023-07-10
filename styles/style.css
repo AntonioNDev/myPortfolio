@@ -435,20 +435,20 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 
 
 .projects #container .proj1 {
-   background: url("/images/proj1.png") no-repeat -140px 0 / cover;
+   background: url("./images/proj1.png") no-repeat -140px 0 / cover;
    object-fit: contain;
 }
 
 .projects #container .proj2 {
-   background: url("/images/proj2.png") no-repeat -140px 0 / cover;
+   background: url("./images/proj2.png") no-repeat -140px 0 / cover;
 }
 
 .projects #container .proj3 {
-   background: url("/images/proj3.png") no-repeat -100px 0 / cover;
+   background: url("./images/proj3.png") no-repeat -100px 0 / cover;
 }
 
 .projects #container .proj4 {
-   background: url("/images/proj4.png") no-repeat 0 0 / cover;
+   background: url("./images/proj4.png") no-repeat 0 0 / cover;
 }
 
 

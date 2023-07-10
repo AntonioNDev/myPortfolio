@@ -333,7 +333,6 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 }
 
 .about #rightSide #card ul {
-   margin-top: 5%;
    margin-bottom: 10%;
    list-style: none;
    margin-right: 0%;
@@ -386,8 +385,72 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
 
 .projects {
    width: 100%;
-   height: 110vh;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+ 
+.projects #container {
+   display: flex;
+   width: 100%;
+   height: 95%;
+   margin: 5%;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+ 
+.projects #container #card {
+   width: 20%; 
+   height: 45%;
+   margin: 1%;
+   min-width: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10%;
+   font-family: var(--nav-);
+   font-size: 1.3em;
+   cursor: pointer;
+   color: #E0E7E9;
+}
+
+.projects #container #card h4 {
+   position: relative;
+   background: linear-gradient(180deg, black -50%, transparent 100%);
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   border-radius: 10%;
+   align-items: center;
+   transition: all 500ms 0s ease;
+}
+
+.projects #container #card h4:hover {
+   background: linear-gradient(180deg, black 10%, transparent 100%);
+   box-shadow: 25px 25px 10px -14px #6C7A89;
+}
+
+
+.projects #container .proj1 {
+   background: url("/images/proj1.png") no-repeat -140px 0 / cover;
+   object-fit: contain;
+}
+
+.projects #container .proj2 {
+   background: url("/images/proj2.png") no-repeat -140px 0 / cover;
+}
+
+.projects #container .proj3 {
+   background: url("/images/proj3.png") no-repeat -100px 0 / cover;
+}
+
+.projects #container .proj4 {
+   background: url("/images/proj4.png") no-repeat 0 0 / cover;
+}
+
 
 
 /* Animations */

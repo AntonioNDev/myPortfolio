@@ -83,7 +83,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    flex: 1;
    display: flex;
    flex-direction: column;
- }
+}
 
 .wrapper .content #top-nav {
    padding: 0.5%;
@@ -468,6 +468,7 @@ footer a:hover {
    color: #307c8b;
 }
 
+
 /* Animations */
 
 @keyframes scrollAnimation {
@@ -528,160 +529,4 @@ footer a:hover {
    100% {
      d: path("M0,128L60,154.7C120,181,240,235,360,229.3C480,224,600,160,720,154.7C840,149,960,203,1080,224C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z");
    }
- }
-
-
-
-
-
- /* Responsive design */
-@media only screen and (max-width: 575.98px) {
-   /* CSS rules for extra small devices */
-   .wrapper {
-      display: block;
-   }
-
-   .wrapper #side-menu {
-      height: 3%;
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-top: 5%;
-      align-items: start;
-      top: 5%;
-   }
-
-   .wrapper #side-menu i, #current {
-      margin: 0% 0 0% 0;
-      font-size: 1.3em;
-   }
-
-   .wrapper #side-menu #current {
-      transform: rotate(0deg);
-      margin: 0px;
-      width: auto;
-   }
-
-   .wrapper .main #hero #intro {
-      margin-left: 5%;
-   }
-
-   .wrapper .main #hero h2 {
-      font-size: 1.8em;
-   }
-
-   .wrapper .main #hero p {
-      font-size: 1em;
-      margin: 1%;
-   }
-
-   #hi {
-      left: 50%;
-      font-size: 1.5em;
-      opacity: 0.6;
-      bottom: 10%;
-   }
-
-   .wrapper .content #top-nav {
-      display: none;
-   }
-
-   .about {
-      display: block;
-   }
-
-   .about #leftSide,#rightSide {
-      width: 100%;
-   }
-
-   .about #leftSide p {
-      font-size: 0.8em;
-      margin: 0% 5% 5% 5%;
-   }
-
-   .about #rightSide #card {
-      width: 78%;
-      margin: 5% 5% 5% 5%;
-   }
-
-   .about #rightSide #card ul li{
-      font-size: 1.2em;
-   }
-
-   .about #rightSide #card ul li::after {
-      padding: 10px 10px 5px 100px;
-   }
-
-   .projects {
-      height: 60vh;
-   }
-
-   .projects #container {
-      height: 100%;
-   }
-
-   .projects #container #card {
-      font-size: 0.9em;
-      width: 35%;
-      height: 30%;
-      min-width: 120px;
-   }
-
-
 }
-
- 
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-   /* CSS rules for small devices */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-   /* CSS rules for medium devices */
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-   /* CSS rules for large devices */
-}
-
-@media only screen and (min-width: 2000px) {
-   /* CSS rules for extra large devices */
-   .wrapper #side-menu i, #current {
-      font-size: 2.5em;
-   }
-
-   .wrapper #side-menu #current {
-      width: 250px;
-   }
-
-   .wrapper .content #top-nav {
-      top: 55px;
-   }
-
-   .wrapper .content #top-nav {
-      font-size: 1.7em;
-   }
-   .wrapper .content #top-nav ul li {
-      width: 250px;
-   }
-   .wrapper .main #hero h2 {
-      font-size: 4.5em;
-   }
-   .wrapper .main #hero p {
-      font-size: 2.5em;
-   }
-   #title {
-      font-size: 0.9em;
-      opacity: 0.4;
-   }
-   .about #leftSide p {
-      font-size: 2em;
-   }
-   .about #rightSide #card ul li {
-      font-size: 2em;
-   }
-   
-   .about #rightSide #card ul li::after {
-      padding: 20px 20px 10px 200px;
-   }
-}
- 

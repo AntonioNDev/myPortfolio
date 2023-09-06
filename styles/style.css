@@ -79,7 +79,7 @@ html::-webkit-scrollbar { width: 0 !important } /* hides the scrollbar */
    height: 100vh;
 }
 
-.wrapper .content {
+.content {
    flex: 1;
    display: flex;
    flex-direction: column;

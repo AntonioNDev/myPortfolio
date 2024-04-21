@@ -7,102 +7,124 @@
       <link rel="stylesheet" href="styles/style.css">
       <link rel="stylesheet" href="style.css">
       <script src="https://kit.fontawesome.com/e8303bef12.js" crossorigin="anonymous"></script>
-      <script src="scripts/script.js"></script>
+      <!-- <script src="scripts/script.js"></script> -->
       <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-      <title>AntonioNDev</title>
+      <title>AntonioDev</title>
    </head>
    <body>
-      <section class="wrapper">
-         <nav id="side-menu">
-            <i id="bars" class="fa-solid fa-bars light"></i>
-            <p id="current" class="light">Home</p>
-            <i id="email" class="fa-regular fa-envelope light"></i>
-            <div id="contact">
-               <h3 id="contactTitle" class="light">Request a project</h3>
-               <form action="">
-                  <label for="firstName" class="light">First Name</label>
-                  <input type="text" name="firstName" id="name" required maxlength="50" minlength="5">
-                  <label for="lastName" class="light">Last Name</label>
-                  <input type="text" name="lastName" id="name" required maxlength="50" minlength="5">
-                  <label for="email" class="light">email</label>
-                  <input type="email" name="email" id="name" required maxlength="60" minlength="5">
-                  <label for="content" class="light">Write more about the project</label>
-                  <textarea name="content" id="text" cols="30" rows="10"></textarea>
-                  <button type="submit">Send</button>
-               </form>
-            </div>
-         </nav>
-         <!-- ############# -->
-         <div class="content">
-            <div id="top-nav">
-               <ul>
-                  <li><a href="#home" class="light">HOME</a></li>
-                  <li><a href="#about" class="light">ABOUT ME</a></li>
-                  <li><a href="#projects" class="light">PROJECTS</a></li>
-               </ul>
-               <h3 id="title"><a href="#home">AntonioNDev</a></h3>
-            </div>
-            <section class="main" id="home">
-               <div id="hero">
-                  <h2 id="intro">Hello, <br> my name is Antonio</h2>
-                  <p id="intro">Welcome to my portfolio website, where I showcase my passion for coding and technology.</p>
-                  <a href="#about"><i id="hi" class="fa-solid fa-arrow-down fa-bounce"></i></a>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                     <defs>
-                     <linearGradient id="waveGradient" gradientTransform="rotate(90)">
-                        <stop offset="80%" stop-color="#E0E7E9" />
-                        <stop offset="100%" stop-color="#A3C6C4" />
-                     </linearGradient>
-                     </defs>
-                     <path class="gradient" fill="url(#waveGradient)" d="M0,0L1440,0L1440,320L0,320Z M0,320L60,320C120,320,240,320,360,320C480,320,600,320,720,320C840,320,960,320,1080,320C1200,320,1320,320,1380,320L1440,320" />
-                  </svg>                
-               </div>
-            </section>
-            <section class="about" id="about">
-                  <div id="leftSide">
-                     <p>Hello, I'm from Macedonia and currently studying <i>Computer Science</i>. 
-                        It's been an exciting journey since I first started coding five years ago, with Python as my initial programming language of choice. 
-                        What drew me to Python was its incredibly simple syntax and ease of understanding.</p>
-                     <p>Computer science appealed to me because it's a challenging discipline that unravels a multitude of fascinating aspects about programming and the vast IT world. </p>
-                     <p>Looking forward, my goal is to continuously expand my knowledge in this field and relish every moment of it. 
-                        The dynamic nature of programming keeps me motivated, and I'm eager to embrace new technologies and advancements as they emerge</p>
-                  </div>
-                  <div id="rightSide">
-                     <div id="card">
-                        <h3 id="skillsTitle">Skills</h3>
-                        <ul>
-                           <li id="lang1">Python</li>
-                           <li id="lang2">HTML</li>
-                           <li id="lang3">CSS</li>
-                           <li id="lang4">JavaScript</li>
-                           <li id="lang5">React</li>
-                           <li id="lang6">Django</li>
-                        </ul>
-                     </div>
-                  </div>
-            </section>
-            <section class="projects" id="projects">
-                  <div id="container">
-                     <div id="card" class="proj1">
-                        <a href="https://github.com/AntonioNDev/BatteryInfo" target="_blank"><h4>Battery tracker</h4></a>
-                     </div>
-                     <div id="card" class="proj2">
-                        <a href="https://github.com/AntonioNDev/WeatherApp" target="_blank"><h4>Weather App</h4></a>
-                     </div>
-                     <div id="card" class="proj3">
-                        <a href="https://github.com/AntonioNDev/PyLoginApp" target="_blank"><h4>Login app</h4></a>
-                     </div>
-                     <div id="card" class="proj4">
-                        <a href="https://github.com/AntonioNDev/SpaceInvaders" target="_blank"><h4>Spacewars</h4></a>
-                     </div>
-                  </div>
-            </section>
-            <footer>
-               <a href="https://github.com/AntonioNDev" target="_blank"><i class="fa-brands fa-github"></i></a>
-               <a href="https://www.instagram.com/a.nikoloski_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-               <a href="https://www.linkedin.com/in/antonio010/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            </footer>
+      <nav id="navbar">
+         <div id="logo">
+            <object type="image/svg+xml" data="images/avatar3Animated.svg">
+               Your browser doesn't support SVGs.
+            </object>
+            <h4 id="title">AntonioNDev</h4>
          </div>
-       </section>       
+         <ul id="menu">
+            <li>about me</li>
+            <li>projects</li>
+            <li><span id="blog">BLOG</span></li>
+         </ul>
+      </nav>
+      <section class="hero">
+         <div id="intro">
+            <p>I'm a passionate software engineer and computer science student. 
+               I love coding, solving problems, learning new things, meeting new people and I love cats 🐈.
+            </p>
+            <ul id="socials">
+               <li><i class="fa-brands fa-instagram"></i></i></li>
+               <li><i class="fa-brands fa-github"></i></li>
+               <li><i class="fa-brands fa-linkedin-in"></i></li>
+               <li><i class="fa-regular fa-envelope"></i></li>
+            </ul>
+         </div>
+         <div id="contentSVG">
+            <object type="image/svg+xml" data="images/heroImageAnimated.svg">
+               Your browser doesn't support SVGs.
+            </object>
+         </div>
+         <div id="heroTitle"><h1>Antonio <br> Nikoloski</h1></div>
+      </section>
+      <div id="skills">
+         <ul>
+            <li>Problem-solving</li>
+            <li>Teamwork</li>
+            <li>Adaptability</li>
+            <li>Communication</li>
+         </ul>
+      </div>
+      <section class="projects">
+         <div id="projectsTitle">Featured <span>projects</span></div>
+         <div id="firstProject">
+            <object type="image/svg+xml" data="images/dashBoard.svg">
+               Your browser doesn't support SVGs.
+            </object>
+            <div id="firstContent">
+               <h3 id="firstContentTitle">Track Your Battery Like a Pro: Simple App Does the Work</h3>
+               <p>Battery Tracking App is an application that I build
+                  using tehnologies as a Python matplotlib, numpy, machine learning and other
+                  data science tools, it helps users monitor their battery percentage and usage history.
+                  <a href="http://" target="_blank" rel="noopener noreferrer">Learn more</a>
+               </p>
+            </div>
+         </div>
+         <div id="secondProject">
+            <div id="secondContent">
+               <h3 id="secondContentTitle">Blast Your Way to Fun: Fight Scary Aliens in My Arcade Game!</h3>
+               <p>Ever dream of battling creepy aliens in a classic arcade game? I made that dream a reality with Pygame!  
+                  This mini-game is a perfect launchpad into the world of game development, 
+                  and it's sure to keep you blasting away for hours.
+                  <a href="http://" target="_blank" rel="noopener noreferrer">Learn more</a>
+               </p>
+            </div>
+            <object type="image/svg+xml" data="images/gamer.svg">
+               Your browser doesn't support SVGs.
+            </object>
+         </div>
+      </section>
+      <div id="buttonProjects">
+         <p>More interesting projects are coming... <i class="fa-solid fa-hourglass-start fa-spin-pulse"></i></p>
+         <button>Explore my GitHub <i class="fa-brands fa-github"></i></button>
+      </div>
+      <div id="funQuote">
+         <p><i class="fa-solid fa-quote-left"></i>If debugging is the process of removing bugs, then programming must be the process of putting them in. <i class="fa-solid fa-quote-right"></i><br>
+            <span>- Edsger W. Dijkstra</span></p>
+      </div>
+      <section class="aboutMe">
+         <h4 id="titleAboutMe">Shall <span style="font-weight: bold;">we?</span></h4>
+         <div id="contentAboutMe">
+            <div id="history">
+               <h3 id="titi">My Love for Programming</h3>
+               <p>Over 4 years ago, I dove headfirst into the world of programming, 
+                  and it's been amazing ever since!  Coding changed my perspective. It's like having a superpower to solve problems in real life, more efficiently than ever.
+                  Then, 2 years ago, my dream came true: 
+                  I landed a spot at my dream college for Computer Science! 
+                  It's definitely challenging, but I'm fueled by the excitement of learning and building even cooler things.
+               </p>
+            </div>
+            <div id="info">
+               <h3 id="titi">Do you have a project?</h3>
+               <p>Based in North Macedonia, I am fluent in English, Serbian, Macedonian. I am happy to chat about</p>
+               <ul>
+                  <li>Internship</li>
+                  <li>full-time collaborations (hybrid or remote)</li>
+                  <li>Temporary projects</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div id="socials">
+            <ul>
+               <li><i class="fa-brands fa-instagram"></i></i></li>
+               <li><i class="fa-brands fa-github"></i></li>
+               <li><i class="fa-brands fa-linkedin-in"></i></li>
+               <li><i class="fa-regular fa-envelope"></i></li>
+            </ul>
+         </div>
+         <div id="legal">
+            <p>Accessibility statement</p>
+            <p>Privacy policy</p>
+         </div>
+      </footer>
    </body>
 </html>

@@ -41,8 +41,6 @@
       text-align: center;
       font-size: 0.9em;
       padding: 0% 0% 0 0%;
-      padding-left: 10px;
-      padding-right: 10px;
    }
 
    .projects #firstProject object {
@@ -94,9 +92,8 @@
    
    .aboutMe #contentAboutMe #history, #info {
       width: 100%;
-      margin: 1%;
-      margin-top: 5%;
-      font-size: 1em;
+      margin: 5% 1.5% 1.5% 1.5%;
+      font-size: 0.9em;
       text-align: center;
    }
 }

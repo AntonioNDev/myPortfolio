@@ -1,9 +1,104 @@
-@import 'style.css';
-
  /* Responsive design */
 @media only screen and (max-width: 575.98px) {
    /* CSS rules for extra small devices */
+   #navbar, #navbar ul{ 
+      font-size: 0.9em;
+   }
 
+   .hero #intro {
+      margin: 5% 0 0 0%;
+      text-align: center;
+   }
+
+   .hero #intro ul li {
+      margin: 0 5% 0 5%;
+   }
+
+   .hero #heroTitle {
+      display: none;
+   }
+
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .hero #intro {
+      width: 100%;
+   }
+
+   .projects #projectsTitle {
+      font-size: 2em;
+   }
+
+   .projects #firstProject, #secondProject {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .projects #firstProject #firstContent, #secondProject #secondContent {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0% 0% 0 0%;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .projects #firstProject object {
+      width: 100%;
+      height: 300px;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
+      border: none;
+      margin-bottom: 5%;
+   }
+
+   .projects #secondProject object {
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      border: none;
+      margin-top: 5%;
+   }
+
+   #buttonProjects button {
+      padding: 5px;
+      width: 55%;
+      font-size: 0.8em;
+   }
+
+   #funQuote {
+      height: 80px;
+      font-size: 0.6em;
+      font-weight: 400;
+      padding-left: 0%;
+      padding-right: 0%;
+   }
+
+   .aboutMe {
+      height: fit-content;
+   }
+
+   .aboutMe #titleAboutMe {
+      font-size: 2em;
+   }
+
+   .aboutMe #contentAboutMe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   
+   .aboutMe #contentAboutMe #history, #info {
+      width: 100%;
+      margin: 1%;
+      margin-top: 5%;
+      font-size: 1em;
+      text-align: center;
+   }
 }
  
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {

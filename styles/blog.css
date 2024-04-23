@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=DM%20Mono:700|DM%20Mono:400');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('responsive.css');
+@import url('animations.css');
+
+
+:root {
+  --text: #0d1519;
+  --background: #f7fafb;
+  --primary: #82afc4;
+  --secondary: #9fa0cd;
+  --accent: #978ac2;
+}
+
+a {
+   text-decoration: none;
+   color: unset;
+}
+
+#blog-contact {
+   width: 20%;
+   text-align: center;
+   height: 100%;
+}
+
+#blog-contact button {
+   padding: 3%;
+   border: 2px solid var(--secondary);
+   border-radius: 10px;
+   font-size: 1em;
+   background-color: transparent;
+   font-family: 'DM Mono';
+   cursor: pointer;
+   color: var(--secondary);
+   transition: all 200ms 0s ease-out;
+}
+
+#blog-contact button:hover {
+   background-color: var(--secondary);
+   color: white;
+}
+
+.blog-content {
+   height: 99vh;
+   display: flex;
+   justify-content: center;
+}
+
+.blog-content #blog-container {
+   width: 65%;
+   display: flex;
+   flex-direction: column;
+}
+
+.blog-content #blog-title {
+   display: flex;
+   justify-content: space-between;
+   padding: 1%;
+   font-size: 1em;
+   align-items: flex-end;
+   border-bottom: 1px dashed black;
+   margin-top: 5%;
+}
+
+.blog-content #blog-content-blocks {
+   width: 90%;
+   height: 100%;
+   margin: 5%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+}
+
+.blog-content #blog-content-blocks #block {
+   width: 40%;
+   height: 150px;
+   margin: 2%;
+   min-width: 200px;
+   min-height: 100px;
+   padding: 3% 0 0 3%;
+   border: 1.5px dotted black;
+   border-radius: 10px;
+   text-wrap: wrap;
+   transition: all 250ms 0s ease-out;
+   cursor: pointer;
+   background-color: transparent;
+}
+
+.blog-content #blog-content-blocks #block:hover {
+   background-color: #82afc4;
+   color: whitesmoke;
+   transform: translateY(-5px);
+   border: 1.5px solid black;
+}
+
+#block #block-title {
+   font-size: clamp(0.5rem, 1.2rem, 2rem);;
+}
+
+#block #publishing-date {
+   padding-top: 3%;
+}

@@ -264,20 +264,20 @@ body {
 
 .projects #firstProject object {
 	width: 45%;
-	height: 600px;
+	height: 550px;
 	background-color: #aaabcd;
-	border-top-right-radius: 20%;
-	border-bottom-right-radius: 20%;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 60px;
 	border: 4px solid var(--accent);
 }
 
 
 .projects #secondProject object {
 	width: 45%;
-	height: 600px;
+	height: 550px;
 	background-color: #aaabcd;
-	border-top-left-radius: 20%;
-	border-bottom-left-radius: 20%;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 	border: 4px solid var(--accent);
 }
 
@@ -294,7 +294,7 @@ body {
 	align-items: center;
 	width: 100%;
 	height: 100px;
-	margin-top: 5%;
+	margin-top: 8%;
 	flex-direction: column;
 	text-align: center;
 }
@@ -341,7 +341,7 @@ body {
 	background-color: #dbd1fb;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-family: 'Inter';
 	font-weight: 300;
 	font-style: italic;
@@ -412,7 +412,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-
 }
 
 footer #socials {

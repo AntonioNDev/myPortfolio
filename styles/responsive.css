@@ -100,17 +100,414 @@
  
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
    /* CSS rules for small devices */
+   #navbar, #navbar ul{ 
+      font-size: 1em;
+   }
+
+   .hero #intro {
+      margin: 5% 0 0 0%;
+      text-align: center;
+   }
+
+   .hero #intro ul li {
+      margin: 0 5% 0 5%;
+   }
+
+   .hero #heroTitle {
+      display: none;
+   }
+
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .hero #intro {
+      width: 100%;
+   }
+
+   .projects #projectsTitle {
+      font-size: 2em;
+   }
+
+   .projects #firstProject, #secondProject {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .projects #firstContentTitle, #secondContentTitle {
+      width: 100%;
+   }
+
+   .projects #firstProject #firstContent, #secondProject #secondContent {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0% 0% 0 0%;
+   }
+
+   .projects #firstProject object {
+      width: 100%;
+      height: 300px;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
+      border: none;
+      margin-bottom: 5%;
+   }
+
+   .projects #secondProject object {
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      border: none;
+      margin-top: 5%;
+   }
+
+   #buttonProjects button {
+      padding: 5px;
+      width: 35%;
+      font-size: 0.9em;
+   }
+
+   #funQuote {
+      height: 80px;
+      font-size: 0.7em;
+      font-weight: 400;
+      padding-left: 0%;
+      padding-right: 0%;
+   }
+
+   .aboutMe {
+      height: fit-content;
+   }
+
+   .aboutMe #titleAboutMe {
+      font-size: 2em;
+   }
+
+   .aboutMe #contentAboutMe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   
+   .aboutMe #contentAboutMe #history, #info {
+      width: 100%;
+      margin: 5% 1.5% 1.5% 1.5%;
+      font-size: 0.9em;
+      text-align: center;
+   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991.98px) {
    /* CSS rules for medium devices */
+   #navbar, #navbar ul{ 
+      font-size: 1em;
+   }
+
+   .hero #intro {
+      margin: 5% 0 0 0%;
+      text-align: center;
+   }
+
+   .hero #intro ul li {
+      margin: 0 5% 0 5%;
+   }
+
+   .hero #heroTitle {
+      display: none;
+   }
+
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .hero #intro {
+      width: 100%;
+   }
+
+   .projects #projectsTitle {
+      font-size: 2em;
+   }
+
+   .projects #firstProject, #secondProject {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .projects #firstContentTitle, #secondContentTitle {
+      width: 100%;
+   }
+
+   .projects #firstProject #firstContent, #secondProject #secondContent {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0% 0% 0 0%;
+   }
+
+   .projects #firstProject object {
+      width: 100%;
+      height: 300px;
+      border-top-right-radius: 0%;
+      border-bottom-right-radius: 0%;
+      border: none;
+      margin-bottom: 5%;
+   }
+
+   .projects #secondProject object {
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 0%;
+      border-bottom-left-radius: 0%;
+      border: none;
+      margin-top: 5%;
+   }
+
+   #buttonProjects button {
+      padding: 5px;
+      width: 35%;
+      font-size: 0.9em;
+   }
+
+   #funQuote {
+      height: 80px;
+      font-size: 0.7em;
+      font-weight: 400;
+      padding-left: 0%;
+      padding-right: 0%;
+   }
+
+   .aboutMe {
+      height: fit-content;
+   }
+
+   .aboutMe #titleAboutMe {
+      font-size: 2em;
+   }
+
+   .aboutMe #contentAboutMe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   
+   .aboutMe #contentAboutMe #history, #info {
+      width: 100%;
+      margin: 5% 1.5% 1.5% 1.5%;
+      font-size: 0.9em;
+      text-align: center;
+   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+@media only screen and (min-width: 992px) and (max-width: 1325.98px) {
    /* CSS rules for large devices */
+   #navbar, #navbar ul{ 
+      font-size: 1em;
+   }
+
+   .hero #intro {
+      margin: 0% 0 0 0%;
+      text-align: center;
+      font-size: 1em;
+   }
+
+   .hero #intro ul li {
+      margin: 0 5% 0 5%;
+   }
+
+   .hero #heroTitle {
+      display: none;
+   }
+
+   .hero {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .hero #intro {
+      width: 55%;
+   }
+
+   .projects #projectsTitle {
+      font-size: 2em;
+   }
+
+   .projects #firstProject, #secondProject {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .projects #firstContentTitle, #secondContentTitle {
+      width: 100%;
+   }
+
+   .projects #firstProject #firstContent, #secondProject #secondContent {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0% 0% 0 0%;
+      margin: 1%;
+   }
+
+   .projects #firstProject object {
+      width: 50%;
+      height: 350px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      border: none;
+      margin-bottom: 5%;
+   }
+
+   .projects #secondProject object {
+      width: 100%;
+      height: 350px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border: none;
+      margin-top: 5%;
+   }
+
+   #buttonProjects button {
+      padding: 6px;
+      width: 20%;
+      font-size: 1em;
+   }
+
+   #funQuote {
+      height: 80px;
+      font-size: 0.9em;
+      font-weight: 400;
+      padding-left: 0%;
+      padding-right: 0%;
+   }
+
+   .aboutMe {
+      height: fit-content;
+   }
+
+   .aboutMe #titleAboutMe {
+      font-size: 2em;
+   }
+
+   .aboutMe #contentAboutMe {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   
+   .aboutMe #contentAboutMe #history, #info {
+      width: 100%;
+      margin: 5% 1.5% 1.5% 1.5%;
+      font-size: 0.9em;
+      text-align: center;
+   }
 }
 
 @media only screen and (min-width: 2000px) {
    /* CSS rules for extra large devices */
+   #navbar #logo object {
+      width: 40%;
+   }
+
+   #navbar #logo, #title {
+      font-size: 1.5em;
+   }
+
+   #navbar, #navbar ul {
+      font-size: 1.3em;
+   }
+   
+   .hero #intro {
+      font-size: 1.4em;
+   }
+
+   .hero #heroTitle {
+      font-size: 5em;
+      justify-content: flex-start;
+      line-height: 1.2em;
+      font-weight: bolder;
+   }
+
+   #skills {
+      font-size: 1.5em;
+      height: 150px;
+   }
+
+   .projects #firstProject {
+      margin-top: 9%;
+   }
+
+   .projects #projectsTitle {
+      font-size: 4em;
+      border-bottom: 2px dashed black;
+	   font-weight: 300;
+      padding-bottom: 1%;
+   }
+
+   .projects #firstProject #firstContent #firstContentTitle, #secondContentTitle {
+      font-size: 1.7em;
+   }
+
+   .projects #firstProject #firstContent, #secondProject #secondContent {
+      font-size: 1.5em;
+	   padding: 5% 5% 0 5%;
+   }
+
+   .projects #secondProject object {
+      width: 45%;
+      height: 750px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+
+   .projects #firstProject object {
+      width: 45%;
+      height: 750px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+   }
+
+   #buttonProjects button {
+      padding: 15px;
+      font-size: 1.7em;
+   }
+
+   #buttonProjects p {
+      font-size: 1.5em;
+   }
+
+   #funQuote {
+      font-size: 1.8em;
+      height: 150px;
+   }
+
+   .aboutMe #titleAboutMe {
+      font-size: 4em;
+      line-height: 4rem;
+      border-bottom: 2px dashed black;
+   }
+
+   .aboutMe #contentAboutMe #history, #info {
+      font-size: 1.5em;
+   }
+
+   .aboutMe #info {
+      padding-top: 3.5%;
+   }
+
+   #titi {
+      font-size: 1.3em;
+   }
+
+   footer {
+      height: 450px;
+      font-size: 1.5em;
+   }
 }
- 

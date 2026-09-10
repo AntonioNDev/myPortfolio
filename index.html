@@ -1,130 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles/style.css">
-      <link rel="stylesheet" href="styles/responsive.css">
-      <link rel="shortcut icon" href="/images/icon.png" type="image/x-icon">
-      <script src="https://kit.fontawesome.com/e8303bef12.js" crossorigin="anonymous"></script>
-      <script async src="scripts/script.js"></script>
-      <title>AntonioDev</title>
-   </head>
-   <body>
-      <nav id="navbar">
-         <div id="logo">
-            <object type="image/svg+xml" data="images/avatar3Animated.svg">
-               Your browser doesn't support SVGs.
-            </object>
-            <h4 id="title">AntonioNDev</h4>
-         </div>
-         <ul id="menu">
-            <li><a href="#aboutMe">about me</a></li>
-            <li><a href="#projects">projects</a></li>
-            <!-- <li><a href="pages/blog.html"><span id="blog">BLOG</span></a></li> -->
-         </ul>
-      </nav>
-      <section class="hero">
-         <div id="intro">
-            <p>I'm a passionate software engineer and computer science student. 
-               I love coding, solving problems, learning new things, meeting new people and I love cats 🐈.
-            </p>
-            <ul id="socials">
-               <li><a href="https://www.instagram.com/a.nikoloski_" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
-               <li><a href="https://github.com/AntonioNDev" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/antonio010/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-               <li><a href="mailto:antonionikoloski2003@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-         </div>
-         <div id="contentSVG">
-            <object type="image/svg+xml" data="images/heroImageAnimated.svg">
-               Your browser doesn't support SVGs.
-            </object>
-         </div>
-         <div id="heroTitle"><h1>Antonio <br> Nikoloski</h1></div>
-      </section>
-      <div id="skills">
-         <ul>
-            <li>Problem-solving</li>
-            <li>Teamwork</li>
-            <li>Adaptability</li>
-            <li>Communication</li>
-         </ul>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antonio Nikoloski — Computer Science &amp; Data Analyst</title>
+<meta name="description" content="Portfolio of Antonio Nikoloski, a computer science student and data analyst working across high-performance computing, bioinformatics, and web development.">
+
+<!-- Theme is set before first paint to avoid a flash of the wrong theme -->
+<script>
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) {}
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#home" class="logo" aria-label="Antonio Nikoloski, home">
+      <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path class="strand-a" d="M9 3c0 6 14 6 14 12s-14 6-14 12" stroke-width="2" stroke-linecap="round"/>
+        <path class="strand-b" d="M23 3c0 6-14 6-14 12s14 6 14 12" stroke-width="2" stroke-linecap="round"/>
+        <line class="rung" x1="9" y1="8.2" x2="23" y2="8.2" stroke-width="1.4" stroke-linecap="round"/>
+        <circle class="rung-dot" cx="16" cy="15" r="1.3"/>
+        <line class="rung" x1="9" y1="21.8" x2="23" y2="21.8" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+    </a>
+
+    <nav class="nav" id="site-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.7 6.7 0 0 0 10.5 10.5Z"/></svg>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-scene" id="hero-scene" aria-hidden="true">
+      <canvas id="hero-canvas"></canvas>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-kicker">Antonio Nikoloski</p>
+      <h1 class="hero-title">Computer science, data,<br>and the space between them.</h1>
+      <p class="hero-text">
+        I'm a computer science student and data analyst in Skopje, North Macedonia.
+        I like problems where performance matters — parallel computing, CUDA, and the
+        algorithms underneath data-heavy systems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="#contact" class="btn btn-ghost">Say hello</a>
       </div>
-      <section class="projects" id="projects">
-         <div id="projectsTitle">Featured <span>projects</span></div>
-         <div id="firstProject">
-            <object type="image/svg+xml" data="images/dashBoard.svg">
-               Your browser doesn't support SVGs.
-            </object>
-            <div id="firstContent">
-               <h3 id="firstContentTitle">Track Your Battery Like a Pro: Simple App Does the Work</h3>
-               <p>Battery Tracking App is an application that I build
-                  using tehnologies as a Python matplotlib, numpy, machine learning and other
-                  data science tools, it helps users monitor their battery percentage and usage history.
-                  <a href="https://github.com/AntonioNDev/BatteryInfo" target="_blank" rel="noopener noreferrer">Learn more</a>
-               </p>
-            </div>
-         </div>
-         <div id="secondProject">
-            <div id="secondContent">
-               <h3 id="secondContentTitle">Blast Your Way to Fun: Fight Scary Aliens in My Arcade Game!</h3>
-               <p>Ever dream of battling creepy aliens in a classic arcade game? I made that dream a reality with Pygame!  
-                  This mini-game is a perfect launchpad into the world of game development, 
-                  and it's sure to keep you blasting away for hours.
-                  <a href="https://github.com/AntonioNDev/SpaceInvaders" target="_blank" rel="noopener noreferrer">Learn more</a>
-               </p>
-            </div>
-            <object type="image/svg+xml" data="images/gamer.svg">
-               Your browser doesn't support SVGs.
-            </object>
-         </div>
-      </section>
-      <div id="buttonProjects">
-         <p>More interesting projects are coming... <i class="fa-solid fa-hourglass-start fa-spin-pulse"></i></p>
-         <button><a href="https://github.com/AntonioNDev" target="_blank">Explore my GitHub <i class="fa-brands fa-github"></i></a></button>
+    </div>
+
+    <button class="scroll-cue" id="scroll-cue" aria-label="Scroll to about section">
+      <span></span>
+    </button>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-text">
+        <h2 class="section-title">About</h2>
+        <p>
+          I'm currently studying Computer Science at Ss. Cyril and Methodius University in
+          Skopje. Most of my work sits at the edge of high-performance computing and data —
+          right now that means writing CUDA kernels to speed up genomic mutation detection,
+          but I've also built full web apps, desktop tools, and a couple of games along the way.
+        </p>
+        <p>
+          I'm drawn to projects that force me to learn something I didn't know how to do the
+          week before, and I'm always open to collaborating on interesting open-source or
+          research work.
+        </p>
       </div>
-      <div id="funQuote">
-         <p><i class="fa-solid fa-quote-left"></i>If debugging is the process of removing bugs, then programming must be the process of putting them in. <i class="fa-solid fa-quote-right"></i><br>
-            <span>- Edsger W. Dijkstra</span></p>
+
+      <aside class="fact-sheet tilt-target">
+        <dl>
+          <div class="fact-row">
+            <dt>Location</dt>
+            <dd>Skopje, North Macedonia</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Studying</dt>
+            <dd>Computer Science, Ss. Cyril and Methodius University</dd>
+          </div>
+          <div class="fact-row">
+            <dt>Focus</dt>
+            <dd>High-performance computing, CUDA, bioinformatics, data analysis</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">What I work with</h2>
+
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages &amp; frameworks</h3>
+          <ul class="chip-list">
+            <li>Python</li><li>C++</li><li>CUDA</li><li>Django</li><li>Node.js</li><li>HTML / CSS / JS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; databases</h3>
+          <ul class="chip-list">
+            <li>MATLAB</li><li>MySQL</li><li>SQLite</li><li>Data analysis</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>How I work</h3>
+          <ul class="chip-list">
+            <li>Problem solving</li><li>Analytical thinking</li><li>Adaptability</li><li>Team collaboration</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="chip-list">
+            <li>Macedonian (native)</li><li>English (fluent)</li><li>Serbian (fluent)</li><li>French (conversational)</li><li>Russian (conversational)</li>
+          </ul>
+        </div>
       </div>
-      <section class="aboutMe" id="aboutMe">
-         <h4 id="titleAboutMe">Shall <span style="font-weight: bold;">we?</span></h4>
-         <div id="contentAboutMe">
-            <div id="history">
-               <h3 id="titi">My Love for Programming</h3>
-               <p>Over 4 years ago, I dove into the world of programming, 
-                  and it's been amazing ever since!. Coding changed my perspective. It's like having a superpower to solve problems in real life, more efficiently than ever.
-                  Then, 2 years ago, my dream came true,  
-                  I landed a spot at my dream college and currently pursuing a degree in Computer Science, 
-                  It's definitely challenging, but I'm fueled by the excitement of learning and building even cooler things.
-               </p>
-            </div>
-            <div id="info">
-               <h3 id="titi">Do you have a project?</h3>
-               <p>Based in North Macedonia, I am fluent in English, Macedonian. I have solid foundation in Python, Web Development, Web Design, UX/UI, Git, Data analysis. I am happy to chat about</p>
-               <ul>
-                  <li>Internship</li>
-                  <li>full-time collaborations (hybrid or remote)</li>
-                  <li>Temporary projects</li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <footer class="footer">
-         <div id="socials">
-            <ul>
-               <li><a href="https://www.instagram.com/a.nikoloski_" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
-               <li><a href="https://github.com/AntonioNDev" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/antonio010/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-               <li><a href="mailto:antonionikoloski2003@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-         </div>
-         <div id="legal">
-            <p>Accessibility statement</p>
-            <p>Privacy policy</p>
-         </div>
-      </footer>
-   </body>
+
+      <div class="cert-block">
+        <h3>Certifications</h3>
+        <div class="cert-cards">
+          <a class="cert-card tilt-target" href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=b1b7507c-d4d1-4c36-bd88-6771577729e9&" target="_blank" rel="noopener">
+            <span class="cert-name">MATLAB Onramp</span>
+            <span class="cert-issuer">MathWorks</span>
+          </a>
+          <a class="cert-card tilt-target" href="https://www.codecademy.com/profiles/Antonio3127/certificates/1e862f2e780818ebfc52948a80e5b77c" target="_blank" rel="noopener">
+            <span class="cert-name">Certified Coursework</span>
+            <span class="cert-issuer">Codecademy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+
+      <article class="project-featured tilt-target">
+        <div class="project-featured-text">
+          <p class="project-label">Featured</p>
+          <h3>CUDA-driven genomic mutation detection</h3>
+          <p>
+            A CUDA and multiprocessing pipeline that scans genomic data for cancer-associated
+            mutations, built to compare parallel approaches for performance against a standard
+            sequential baseline.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li><li>CUDA / C++</li><li>Bioinformatics</li><li>Multiprocessing</li>
+          </ul>
+          <a href="https://github.com/AntonioNDev/PiDP-Project" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+        </div>
+      </article>
+
+      <ul class="project-list">
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>Battery tracker</h3>
+            <a href="https://github.com/AntonioNDev/BatteryInfo" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A desktop app that logs your device's battery percentage every 15 minutes into SQLite and charts the history with matplotlib.</p>
+          <ul class="tag-list"><li>Python</li><li>Tkinter</li><li>SQLite</li><li>Matplotlib</li></ul>
+        </li>
+
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>Weather app</h3>
+            <a href="https://github.com/AntonioNDev/WeatherApp" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A Django app that pulls live weather data and displays current conditions in a simple interface.</p>
+          <ul class="tag-list"><li>Django</li><li>Python</li></ul>
+        </li>
+
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>Space Invaders</h3>
+            <a href="https://github.com/AntonioNDev/SpaceInvaders" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A classic arcade shooter built from scratch with PyGame, including sprite movement, collision detection, and score tracking.</p>
+          <ul class="tag-list"><li>Python</li><li>PyGame</li></ul>
+        </li>
+
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>Python package updater</h3>
+            <a href="https://github.com/AntonioNDev/Python-update-packages" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A small CLI tool that finds every outdated pip package on your system and updates them all in one command.</p>
+          <ul class="tag-list"><li>Python</li><li>CLI</li></ul>
+        </li>
+
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>Django cake shop</h3>
+            <a href="https://github.com/AntonioNDev/cakeShop" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A Django storefront where sellers list and manage cakes and customers register, order, and check out, with clean order logic and a Bootstrap front end.</p>
+          <ul class="tag-list"><li>Django</li><li>Python</li><li>Bootstrap</li></ul>
+        </li>
+
+        <li class="project-row">
+          <div class="project-row-head">
+            <h3>HideSeek</h3>
+            <a href="https://github.com/AntonioNDev/HideSeek" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
+          </div>
+          <p>A small Python game project exploring hide-and-seek style game logic and state management.</p>
+          <ul class="tag-list"><li>Python</li></ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-inner contact-grid">
+      <div>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-text">
+          Based in Skopje, open to remote or on-site work and collaboration. The fastest way
+          to reach me is email.
+        </p>
+        <a class="contact-email" href="mailto:antonionikoloski2003@gmail.com">antonionikoloski2003@gmail.com</a>
+
+        <div class="contact-links">
+          <a href="https://github.com/AntonioNDev" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/antonio-nikoloski/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="contact-cv">
+        <a class="btn btn-ghost" href="assets/Antonio-Nikoloski-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Designed and built by Antonio Nikoloski in Skopje.</p>
+  <p class="footer-quote">"Turning coffee into code and data into insights."</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
